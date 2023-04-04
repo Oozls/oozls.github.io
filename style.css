@@ -30,13 +30,29 @@
     font-family: 'Apple', 'Malgun Gothic';
 }
 
-/* START PAGE */
+body {
+    overflow-x: auto;
+}
+
+#warning {
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s linear;
+}
+
+#warning.active {
+    opacity: 1;
+}
+
+/* START PAGE 1707 916*/
 
 .page0 {
     position: relative;
-    width: 100%;
-    height: 800px;
-    padding: 100px;
+    width: 100vw;
+    height: 85vh;
+    padding: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,8 +63,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 20px 100px;
+    width: 100vw;
+    padding: 1.1vw 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,64 +89,14 @@ header ul li a {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     animation: textStart 1s ease-in-out;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 0.5vw;
     font-weight: 900;
     text-decoration: none;
 }
 
 .content {
     position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.rect {
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100%;
-    background-color: #35358e;
-}
-
-.textBox {
-    max-width: 400px;
-}
-
-.textBox h2 {
-    animation: textTopStart 2s ease-in-out;
-    text-shadow: 0 3 50px rgba(0, 0, 0, 1);
-    color: white;
-    font-size: 4em;
-    font-weight: 100;
-    line-height: 1.4em;
-}
-
-.textBox h2 span {
-    color: #f1f389;
-    font-size: 1.2em;
-    font-weight: 900;
-}
-
-.textBox p {
-    animation: textStart 3s ease-in-out;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
-    color: #888;
-    margin-top: 20px;
-}
-
-/* PAGE 1 */
-
-.page1 {
-    z-index: 1;
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-    background-color: #444;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,12 +107,64 @@ header ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 65%;
-    height: 100%;
-    padding: 50px;
+    width: 40vw;
+    height: 100vh;
+    background-color: #35358e;
+}
+
+.textBox {
+    max-width: 25vw;
+}
+
+.textBox h2 {
+    animation: textTopStart 2s ease-in-out;
+    text-shadow: 0 3 50px rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 12vh;
+}
+
+.textBox h2 span {
+    color: #f1f389;
+    font-size: 5vw;
+    font-weight: 900;
+}
+
+.textBox p {
+    font-size: 1.2vw;
+    animation: textStart 3s ease-in-out;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    color: #888;
+    margin-top: 1.1vw;
+}
+
+/* PAGE 1 */
+
+.page1 {
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 55vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rect2 {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 100vh;
+    padding: 3vw;
     background-color: #222;
 }
 
-.rect1 p {
+.rect2 p {
     color: white;
 }
