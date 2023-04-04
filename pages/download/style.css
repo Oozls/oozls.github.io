@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Apple';
+    src: url("../../assets/fonts/AppleSDGothicNeoM.ttf") format("truetype");
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Apple', 'Malgun Gothic';
+}
+
+.list {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 50px;
+    padding: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+    background-color: #333;
+}
+
+.list ul li {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.list ul li a {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+    padding: 0px 5px;
+}

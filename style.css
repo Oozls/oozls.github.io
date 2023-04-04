@@ -116,7 +116,7 @@ header ul li a {
 }
 
 .textBox p {
-    animation: textTopStart 2s ease-in-out;
+    animation: textStart 3s ease-in-out;
     text-shadow: 0 0 50px rgba(0, 0, 0, 1);
     color: #888;
     margin-top: 20px;
@@ -129,7 +129,7 @@ header ul li a {
     position: relative;
     width: 100%;
     min-height: 500px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     background-color: #444;
     display: flex;
     justify-content: space-between;
