@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Apple';
+    src: url("./assets/fonts/AppleSDGothicNeoM.ttf") format("truetype");
+}
+
+@keyframes textStart {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}  
+
+@keyframes textTopStart {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Apple', 'Malgun Gothic';
+}
+
+/* START PAGE */
+
+.page0 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c3c3f5;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h4 {
+    animation: textStart 1s ease-in-out;
+    color: white;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: black;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: textStart 1s ease-in-out;
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rect {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #35358e;
+}
+
+.textBox {
+    max-width: 400px;
+}
+
+.textBox h2 {
+    animation: textTopStart 2s ease-in-out;
+    text-shadow: 0 3 50px rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1.4em;
+}
+
+.textBox h2 span {
+    color: #f1f389;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.textBox p {
+    animation: textTopStart 2s ease-in-out;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    color: #888;
+    margin-top: 20px;
+}
+
+/* PAGE 1 */
+
+.page1 {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rect1 {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    padding: 50px;
+    background-color: #222;
+}
+
+.rect1 p {
+    color: white;
+}
