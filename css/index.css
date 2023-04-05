@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Apple';
-    src: url("./assets/fonts/AppleSDGothicNeoM.ttf") format("truetype");
+    src: url("../assets/fonts/AppleSDGothicNeoM.ttf") format("truetype");
 }
 
 @keyframes textStart {
@@ -34,25 +34,13 @@ body {
     overflow-x: auto;
 }
 
-#warning {
-    opacity: 0;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    transition: opacity 1s linear;
-}
-
-#warning.active {
-    opacity: 1;
-}
-
-/* START PAGE 1707 916*/
+/* START PAGE */
 
 .page0 {
     position: relative;
     width: 100vw;
     height: 85vh;
-    padding: 15vh;
+    padding: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +80,10 @@ header ul li a {
     margin-left: 1vw;
     font-weight: 900;
     text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #f1f389;
 }
 
 .content {

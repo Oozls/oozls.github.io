@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Apple';
+    src: url("../assets/fonts/AppleSDGothicNeoM.ttf") format("truetype");
+}
+
+@keyframes textStart {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}  
+
+@keyframes textTopStart {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Apple', 'Malgun Gothic';
+}
+
+body {
+    overflow-x: auto;
+}
+
+/* START PAGE */
+
+.page0 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35358e;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2.5vw 2.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h4 {
+    animation: textStart 1s ease-in-out;
+    color: white;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: textStart 1s ease-in-out;
+    display: inline-block;
+    margin-left: 3vw;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #f1f389;
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.textBox {
+    max-width: 75vw;
+    max-height: 100vh;
+}
+
+.textBox h2 {
+    animation: textTopStart 2s ease-in-out;
+    text-shadow: 0 3 50px rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 7vw;
+    font-weight: 100;
+    line-height: 5vh;
+}
+
+.textBox h2 span {
+    color: #f1f389;
+    font-size: 9vw;
+    font-weight: 900;
+}
+
+.textBox p {
+    font-size: 1.2vw;
+    animation: textStart 3s ease-in-out;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    color: #888;
+    margin-top: 1.1vw;
+}
+
+/* PAGE 1 */
+
+.page1 {
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 55vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
