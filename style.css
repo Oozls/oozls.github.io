@@ -89,7 +89,7 @@ header ul li a {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     animation: textStart 1s ease-in-out;
     display: inline-block;
-    margin-left: 0.5vw;
+    margin-left: 1vw;
     font-weight: 900;
     text-decoration: none;
 }

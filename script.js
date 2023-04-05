@@ -1,4 +1,9 @@
+
 window.onload = function() {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        window.location.href = "mobile.html";
+    }
+
     const warning = document.querySelector('#warning');
     if (window.innerWidth < window.innerHeight && !warning.classList.contains("active")) {
         warning.classList.add("active");
